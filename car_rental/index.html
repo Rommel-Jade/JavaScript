@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveEasy Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>DriveEasy</h2>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#cars">Cars</a>
+                <a href="#booking">Book Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div>
+            <h1>Rent a Car. Drive Anywhere.</h1>
+            <p>Affordable and convenient car rental for your next trip.</p>
+            <a href="#cars" class="btn">View Cars</a>
+        </div>
+    </section>
+
+    <!-- Cars -->
+    <section id="cars" class="section">
+        <h2>Available Cars</h2>
+        <p class="subtitle">Choose the car that fits your needs.</p>
+
+        <div class="car-container">
+
+    <div class="car-container">
+
+    <!-- Toyota Vios -->
+    <div class="car-card">
+        <div class="car-image">
+            <img src="vios.jpg" alt="Toyota Vios">
+        </div>
+
+        <h3>Toyota Vios</h3>
+        <p>Comfortable sedan for city trips.</p>
+        <h4>₱2,500 / day</h4>
+
+        <button onclick="selectCar('Toyota Vios', 2500)">
+            Book Now
+        </button>
+    </div>
+
+
+    <!-- Toyota Innova -->
+    <div class="car-card">
+        <div class="car-image">
+            <img src="innova.png" alt="Toyota Innova">
+        </div>
+
+        <h3>Toyota Innova</h3>
+        <p>Spacious vehicle for family trips.</p>
+        <h4>₱3,500 / day</h4>
+
+        <button onclick="selectCar('Toyota Innova', 3500)">
+            Book Now
+        </button>
+    </div>
+
+
+    <!-- Honda Civic -->
+    <div class="car-card">
+        <div class="car-image">
+            <img src="civic.jpg" alt="Honda Civic">
+        </div>
+
+        <h3>Honda Civic</h3>
+        <p>Stylish and comfortable for everyday driving.</p>
+        <h4>₱3,000 / day</h4>
+
+        <button onclick="selectCar('Honda Civic', 3000)">
+            Book Now
+        </button>
+    </div>
+
+</div>
+
+</div>
+
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+
+        <h2>Book Your Car</h2>
+        <p class="subtitle">Fill out the form to calculate your rental cost.</p>
+
+        <form id="bookingForm">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="car">Selected Car</label>
+            <input type="text" id="car" placeholder="Select a car above" readonly required>
+
+            <label for="days">Number of Days</label>
+            <input type="number" id="days" min="1" placeholder="Example: 3" required>
+
+            <button type="submit" class="book-btn">
+                Calculate Rental
+            </button>
+
+        </form>
+
+        <!-- Result -->
+        <div id="result" class="result"></div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 DriveEasy Car Rental</p>
+        <p>Simple Car Rental Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

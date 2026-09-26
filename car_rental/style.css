@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #C8DFDB;
+    color: #22396F;
+}
+
+/* Navigation */
+
+header {
+    background: #22396F;
+    color: white;
+    padding: 18px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #C8DFDB;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #C8DFDB;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #22396F;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+    color: #22396F;
+}
+
+.btn {
+    display: inline-block;
+    background: #22396F;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #172A54;
+}
+
+/* Sections */
+
+.section {
+    padding: 60px 8%;
+    text-align: center;
+    background: #C8DFDB;
+}
+
+.section h2,
+.booking-section h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #22396F;
+}
+
+.subtitle {
+    margin-bottom: 35px;
+    color: #22396F;
+}
+
+/* Cars */
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(34, 57, 111, 0.15);
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Car Image Container */
+
+.car-image {
+    width: 100%;
+    height: 200px;
+    background: #C8DFDB;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.car-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+
+/* Car Information */
+
+.car-card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #22396F;
+}
+
+.car-card p {
+    color: #5f6f78;
+    margin-bottom: 10px;
+}
+
+.car-card h4 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: #22396F;
+}
+
+/* Buttons */
+
+.car-card button,
+.book-btn {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    background: #22396F;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.car-card button:hover,
+.book-btn:hover {
+    background: #172A54;
+}
+
+/* Booking */
+
+.booking-section {
+    padding: 60px 20px;
+    background: #C8DFDB;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(34, 57, 111, 0.15);
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #22396F;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C8DFDB;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #22396F;
+}
+
+form input:focus {
+    outline: none;
+    border: 2px solid #22396F;
+}
+
+.book-btn {
+    margin-top: 25px;
+}
+
+/* Result */
+
+.result {
+    max-width: 500px;
+    margin: 25px auto 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 4px 10px rgba(34, 57, 111, 0.15);
+}
+
+.result h3 {
+    color: #22396F;
+    margin-bottom: 10px;
+}
+
+.result p {
+    margin: 7px 0;
+    color: #22396F;
+}
+
+/* Footer */
+
+footer {
+    background: #22396F;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .car-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .car-image {
+        height: 200px;
+    }
+}
